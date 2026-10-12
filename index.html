@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MeLaJuego — trivial de fiesta para jugar en grupo con un móvil</title>
+<meta name="description" content="Trivial de fiesta con un solo móvil: preguntas de A o B, todos votan a la vez y quien falla pierde una vida. De 2 a 20 jugadores, 14 categorías y más de 5.500 preguntas. Sin cuentas y sin conexión.">
+
+<!-- Antes que nada: en un móvil con tienda, esto salta sin llegar a pintar. -->
+<script src="assets/go.js"></script>
+
+<!-- Lo que lee WhatsApp para la vista previa. No ejecuta JavaScript, así que
+     tiene que estar escrito tal cual. La imagen va con la dirección entera. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MeLaJuego">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="MeLaJuego — el trivial de fiesta">
+<meta property="og:description" content="Un solo móvil, todos votan a la vez y quien falla pierde una vida. El último en pie gana.">
+<meta property="og:url" content="https://melajuego.github.io/">
+<meta property="og:image" content="https://melajuego.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://melajuego.github.io/">
+
+<!-- Lo mismo que dice la página, en el formato que leen las máquinas: qué es,
+     cuántos juegan, dónde se instala y cuánto cuesta. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoGame", "MobileApplication"],
+  "name": "MeLaJuego",
+  "alternateName": ["Me La Juego", "MeLaJuego: Trivial de fiesta"],
+  "url": "https://melajuego.github.io/",
+  "image": "https://melajuego.github.io/assets/og.jpg",
+  "description": "Trivial de fiesta para jugar en grupo con un solo móvil que va pasando de mano en mano. Cada jugador tiene vidas: sale una pregunta con dos opciones, A o B, todos votan a la vez y quien falla pierde una. Gana el último en pie. De 2 a 20 jugadores, más de 5.500 preguntas en 14 categorías. Sin cuentas ni registros, y funciona sin conexión.",
+  "inLanguage": "es",
+  "genre": ["Trivia", "Juego de preguntas", "Juego de fiesta"],
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "iOS, Android",
+  "gamePlatform": ["iOS", "Android"],
+  "playMode": "https://schema.org/MultiPlayer",
+  "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 20 },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "description": "Gratis con 10 categorías. Las cuatro premium se desbloquean sueltas o todas juntas con una compra única."
+  },
+  "installUrl": [
+    "https://apps.apple.com/es/app/id6769114236",
+    "https://play.google.com/store/apps/details?id=com.gestiamigos.melajuego"
+  ]
+}
+</script>
+
+<meta name="theme-color" content="#FFE135">
+<meta name="apple-itunes-app" content="app-id=6769114236">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="page">
+
+  <main>
+    <div class="hero">
+      <p class="eyebrow">Trivial de fiesta · un solo móvil</p>
+
+      <div class="title">
+        <h1><span>ME LA</span><span class="juego">JUEGO</span></h1>
+      </div>
+
+      <div class="art"><img src="assets/icon-512.png" alt="" width="512" height="512"></div>
+
+      <div class="rest">
+        <p class="claim"><span>Si fallas, pierdes una vida.</span><span>El último en pie gana.</span></p>
+
+        <!-- El enlace que vale es el de go.js, que le añade de dónde viene la
+             visita; este es el que se queda quien no ejecuta JavaScript. Y si
+             una tienda deja de estar publicada (`live`), go.js apaga su botón. -->
+        <div class="stores">
+          <a class="store" data-store="ios" href="https://apps.apple.com/es/app/id6769114236">
+            <small>Descárgalo en</small>
+            App Store
+          </a>
+          <a class="store" data-store="android" href="https://play.google.com/store/apps/details?id=com.gestiamigos.melajuego">
+            <small>Disponible en</small>
+            Google Play
+          </a>
+        </div>
+
+        <p class="pitch">El móvil va pasando de mano en mano. Sale una pregunta con dos opciones, <strong>A o B</strong>, el tiempo corre y <strong>todos votan a la vez</strong>. Quien falla pierde una vida. De 2 a 20 jugadores, sin cuentas y sin conexión.</p>
+      </div>
+    </div>
+
+    <ul class="shots">
+      <li><img src="assets/shot-1.jpg" alt="Una pregunta con dos opciones, A o B, y el tiempo corriendo: «¿Dónde vive el armadillo gigante?»." width="600" height="1300"></li>
+      <li><img src="assets/shot-2.jpg" alt="El truco para votar en secreto: una moneda en el puño es A y el puño vacío es B." width="600" height="1300" loading="lazy"></li>
+      <li><img src="assets/shot-3.jpg" alt="La pantalla de elegir categoría: General, Cine, Música, Geografía, Deportes, Animales, Historia y Ciencia." width="600" height="1300" loading="lazy"></li>
+    </ul>
+
+    <ul class="facts">
+      <li><strong>5.500+ preguntas</strong>De lo fácil a lo retorcido.</li>
+      <li><strong>De 2 a 20</strong>Jugadores, con un solo móvil.</li>
+      <li><strong>Sin conexión</strong>Ni cuentas, ni registros.</li>
+      <li><strong>10 categorías gratis</strong>Las cuatro premium, sueltas o en un pack.</li>
+    </ul>
+
+    <section class="modes" aria-labelledby="modos">
+      <h2 id="modos">Tres formas de jugársela</h2>
+      <p class="lead">Cada jugador empieza con sus vidas. Cuántas, y cuánto tiempo hay para contestar, lo decide la mesa.</p>
+      <ul>
+        <li>
+          <h3>A o B</h3>
+          <p>La pregunta normal: dos opciones y el tiempo corriendo. Todos votan a la vez, y quien falla pierde una vida.</p>
+        </li>
+        <li>
+          <h3>Me la juego</h3>
+          <p>Una pregunta sin opciones, en voz alta. Si aciertas, ganas una vida; si fallas, la pagas caro.</p>
+        </li>
+        <li>
+          <h3>Duelo</h3>
+          <p>Retas a quien quieras, cara a cara, por una vida: si aciertas se la quitas, y si fallas se la regalas.</p>
+        </li>
+        <li>
+          <h3>Votar sin chivarse</h3>
+          <p>El truco del puño: una moneda dentro es A, el puño vacío es B. Todos lo enseñan a la vez.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cats" aria-labelledby="categorias">
+      <h2 id="categorias">14 categorías</h2>
+      <p class="lead">Se juega a una, o a «cada uno a lo suyo»: cada jugador elige la suya y las preguntas se van alternando.</p>
+      <ul>
+        <li>General</li>
+        <li>Cine</li>
+        <li>Música</li>
+        <li>Geografía</li>
+        <li>Animales</li>
+        <li>Deportes</li>
+        <li>Historia</li>
+        <li>Arte</li>
+        <li>Ciencia</li>
+        <li>Literatura</li>
+        <li class="premium">Escuela de Magia</li>
+        <li class="premium">Springfield</li>
+        <li class="premium">Marcas</li>
+        <li class="premium">Fútbol</li>
+      </ul>
+      <p class="small">Las cuatro últimas son las premium.</p>
+    </section>
+
+    <!-- Lo que pregunta quien todavía no lo tiene. Cada respuesta se entiende
+         sola, sin el resto de la página: es lo que copia un buscador o un
+         asistente cuando alguien le pide un juego así. -->
+    <section class="faq" aria-labelledby="dudas">
+      <h2 id="dudas">Preguntas frecuentes</h2>
+      <dl>
+        <div>
+          <dt>¿Cuánta gente puede jugar?</dt>
+          <dd>De 2 a 20, con un solo móvil que va pasando de mano en mano. Los demás no tienen que instalar nada.</dd>
+        </div>
+        <div>
+          <dt>¿Cómo se juega?</dt>
+          <dd>Cada jugador tiene vidas. Sale una pregunta con dos opciones, A o B, y todos votan a la vez antes de que se acabe el tiempo. Quien falla pierde una vida, y gana el último que quede en pie.</dd>
+        </div>
+        <div>
+          <dt>¿Hace falta internet?</dt>
+          <dd>No. Funciona sin conexión.</dd>
+        </div>
+        <div>
+          <dt>¿Hay que registrarse?</dt>
+          <dd>No. Sin cuentas ni registros: pones los nombres, eliges categoría y a jugar.</dd>
+        </div>
+        <div>
+          <dt>¿Es gratis?</dt>
+          <dd>Se descarga gratis con 10 categorías. Las cuatro premium —Escuela de Magia, Springfield, Marcas y Fútbol— se desbloquean sueltas, o todas juntas y para siempre con una compra única.</dd>
+        </div>
+        <div>
+          <dt>¿De qué son las preguntas?</dt>
+          <dd>Más de 5.500 en 14 categorías: General, Cine, Música, Geografía, Animales, Deportes, Historia, Arte, Ciencia, Literatura, Escuela de Magia, Springfield, Marcas y Fútbol.</dd>
+        </div>
+        <div>
+          <dt>¿Cómo se vota sin que te copien?</dt>
+          <dd>Con el truco del puño: una moneda dentro es A y el puño vacío es B. Todos lo enseñan a la vez.</dd>
+        </div>
+        <div>
+          <dt>¿En qué dispositivos funciona?</dt>
+          <dd>En iPhone y iPad, y en móviles Android. El juego está en español.</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="https://carcanye.github.io/privacy-melajuego/privacidad.html">Privacidad</a>
+    <a href="https://carcanye.github.io/privacy-melajuego/terminos.html">Términos</a>
+    <a class="mail" href="mailto:gestibro@gmail.com">gestibro@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
